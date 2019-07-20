@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Biko;
+    src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+  }
+
+
+
+  body {
+    background: white;
+    margin: 2rem;
+  }
+  header { 
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    transition: 1s font-size;
+  }
+
+
+  header video { width: 100%; }
+
+  svg { 
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    transition: 1s font-size;
+  }
+  svg text {
+    font-family: Biko, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: 1s font-size;
+  }
+  svg rect {
+    fill: white;
+  }
+  svg > rect {
+      -webkit-mask: url(#mask);
+      mask: url(#mask);
+  }
+
+@media screen (max-width: 1200px){
+    svg{
+        font-size: 4em;
+    }
+}
